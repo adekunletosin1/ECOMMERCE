@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.html {
+  font-size: 64.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ..utility classes../////////// */
+
+.container {
+  
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-weight: small;
+}
+
+
+.btn-primary {
+  color: #fff;
+  background: #16a083;
+}
+
+.btn-primary:hover {
+  background: #abaead;
+  transition: background 0.3s ease-in-out;
+}
+
+/* ............/navbar/............ */
+
+/* desktop mode............/// */
+
+.navbar {
+  box-shadow: 0px 5px 10px 0px #aaa;
+  position: relative;
+  width: 100%;
+  background: #fff;
+  color: #000;
+  opacity: 0.90;
+  height: 80px;
+  z-index: 10;
+  align-content: center;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  margin-top: auto;
+}
+
+.navbar .navbar-container img{
+margin-left: 300px;
+height: 60px;
+}
+
+.menu-items {
+  order: 2;
+  display: flex;
+}
+
+.menu-items li {
+  width: auto;
+  height: auto;
+  list-style: none;
+  margin-right: 3.8rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.2rem;
+  border: 2px solid rgb(239, 234, 234);
+  border-radius: 10%;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #444;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.menu-items a:hover {
+  color: orangered;
+  transition: color 0.3s ease-in-out;
+}
+
+.logo {
+  order: 1;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  margin-right: 580px;
+}
+
+.showcase-area {
+  height: 40vh;
+  background: linear-gradient(
+      rgba(240, 240, 240, 0.144),
+      rgba(255, 255, 255, 0.336)
+    ),
+    url("../img/65537.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 8px;
+}
+
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.6rem;
+}
+
+.main-title{
+   color: orangered;
+   font-size: bold;
+   text-transform: capitalize;
+}
+
+.showcase-container p{
+   color: white;
+   font-weight: bolder;
+}
+hr {
+  border: none;              /* Removes the default border */
+  height: 4px;               /* Increases the thickness */
+  background-color: #FF6347; /* Sets a colorful background (e.g., tomato color) */
+  width: 100%;                /* Adjusts the width (optional) */
+  margin: 0 auto;         /* Centers the <hr> and adds space above and below */
+  border-radius: 2px;        /* Rounds the edges slightly */
+}
+
+/* ......//about us//...... */
+
+#about {
+  display: flex;
+   height: 100%;
+   padding: 0 1rem;
+  background: #f5f5f7;
+}
+
+#about .about-wrapper {
+  display: flex;
+  align-items: center;          
+    gap: 190px;                   
+  flex-wrap: wrap;
+}
+
+#about h2 {
+  font-size: 3.1rem;
+}
+
+#about p {
+  font-size: 1.2rem;
+  color: #555;
+  white-space: wrap;
+}
+
+#about .small {
+  font-size: 1.7rem;
+  color: #666;
+  font-weight: 600;
+}
+
+#about .about-text {
+  flex: 1;
+  white-space: wrap;
+}
+
+.about-image img {
+  width: 250%;                   /* Ensures the image resizes responsively */
+  max-width: 400px;              /* Limits the max width of the image */
+  height: 410px;                  /* Maintains the image aspect ratio */
+  border-radius: 80%;
+  object-fit: cover;
+}
+
+
+  /* Order */
+section{
+  width: auto;
+  height: 80vh;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+
+.detail .flash{
+  width: 100px;
+  margin: 90px 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.detail .flash h1{
+  font-size: 3rem;
+  color:black;
+  text-align: center;
+  white-space: nowrap; 
+}
+
+.detail .shoes{
+  margin: 0 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail .shoes .card{
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px white;
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 100px;
+}
+
+/*.detail .shoes:hover .card{
+  scale: 1.1;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.detail .shoes:hover .card:not(:hover){
+  opacity: 0.2;
+  backdrop-filter: blur(10px);
+  scale: 1;
+}
+  */
+
+.detail .shoes .card img{
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.detail .shoes .card .description{
+  margin:0 10px;
+  padding: 1rem 0;
+}
+.detail .shoes .card .description h1{
+  font-family: 'Patua One', serif;
+  color: #dd20c4;
+  letter-spacing: 1px;
+  margin: 8px 0;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.detail .shoes .card .description p{
+  float: left;
+  margin-left: 2px;
+
+}
+
+.detail .shoes .card .description .price{
+  font-family: 'Lemon', serif;
+  margin:10px 20px 10px 0;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* ........ Contact Us........... */
+
+#contact {
+  display: flex;
+  padding: 3rem 0;
+  margin-top: auto;
+  height: 100%;
+  gap: 0px;
+}
+
+.contact-container {
+  display: flex;
+  background: #fff;
+  height: 45vh;
+  align-items: center;
+}
+
+.contact-img img {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form-container {
+  padding: 0rem;
+  width: 80%;
+  margin: auto;
+}
+
+.form-container input {
+  display: block;
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  padding: 1rem 0;
+  box-shadow: none;
+  outline: none;
+  margin-bottom: 1rem;
+  color: #444;
+  font-weight: bold;
+}
+
+.form-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #ddd;
+  color: #444;
+  outline: none;
+  padding: 1rem 0;
+  resize: none;
+}
+
+.form-container h2 {
+  font-size: 2.7rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 1rem;
+  margin-top: -1.2rem;
+  
+}
+
+.form-container a {
+  font-size: 1.3rem;
+}
+
+
+
+
+/* Styling for the footer area */
+.footarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  background-color: rgb(206, 167, 154);
+  padding: 1rem;
+}
+
+/* Styling for the copyright text */
+.footarea .ground .high p {
+  margin: 0;
+  color: rgb(14, 15, 15);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Center alignment for social icons */
+.footarea .ground .social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* Social icon individual styling */
+.fa {
+  padding: 10px;
+  font-size: 18px;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: rgb(205, 208, 205);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Facebook icon */
+.fa-facebook {
+  background-color: #3B5998;
+}
+
+/* Twitter icon */
+.fa-twitter {
+  background-color: #55ACEE;
+}
+
+/* Twitter icon */
+.fa-instagram {
+  background-color: #c03f15;
+}
+
+/* Hover effect for social icons */
+.fa:hover {
+  opacity: 0.6;
+}
+
+/* Flex container for horizontal alignment */
+.ground {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.high {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 500px;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
