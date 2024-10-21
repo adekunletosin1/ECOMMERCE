@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600&family=Lemon&family=Patua+One&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+:root{
+scroll-behavior: smooth;
+}
+
+body{
+  width: 100%;
+  overflow-x: hidden;
+  height: auto;
+  position: relative;
+  background-color: whitesmoke;
+}
+
+img{
+  max-width: 100%;
+}
+
+nav .wrapper{
+  background-image: url(../img/6453.jpg);
+    position: absolute;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: antiquewhite;
+    align-content: center;
+}
+
+nav .nav-container{
+  width: 84%;
+  height: 80%;
+  margin:  0 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+nav .nav-container img{
+    width: 90px;
+    height: auto;
+    margin: 0;
+    padding: 76;
+    background-color: transparent;
+    align-self: center;
+    border: 2px solid black;
+    border-radius: 20%;
+}
+
+nav .nav-container .navmessage {
+ color: white; 
+ padding-right: 310px;
+}
+
+nav .nav-container .links a{
+  float: left;
+  font-size: 1.4rem;
+  color: antiquewhite;
+  text-decoration: none;
+  margin: 0 50px;
+  transition: 0.1s linear;
+  padding: 0 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  border: 3px solid rgb(239, 234, 234);
+  border-radius: 10%;
+  border-color: chocolate;
+}
+
+nav .nav-container .links a:hover{
+  color: rgb(124, 123, 123);
+    background: orange;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Order */
+section{
+  width: auto;
+  height: 100vh;
+  overflow: auto;
+
+}
+
+.detail .flash{
+  width: 100%;
+  margin: 90px 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.detail .flash h1{
+  font-size: 3rem;
+  color:black;
+  text-align: center;
+  white-space: nowrap; 
+}
+
+.detail .shoes{
+  margin: 0 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.detail .shoes .card{
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px white;
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+}
+
+/*.detail .shoes:hover .card{
+  scale: 1.1;
+  transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.detail .shoes:hover .card:not(:hover){
+  opacity: 0.2;
+  backdrop-filter: blur(10px);
+  scale: 1;
+}
+  */
+
+.detail .shoes .card img{
+  width: 300%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.detail .shoes .card .description{
+  margin:0 10px;
+  padding: 1rem 0;
+}
+.detail .shoes .card .description h1{
+  font-family: 'Patua One', serif;
+  letter-spacing: 1px;
+  margin: 8px 0;
+  text-align: center;
+  padding-bottom: 0.5rem;
+}
+
+.detail .shoes .card .description p{
+  float: left;
+  margin-left: 2px;
+}
+.detail .shoes .card .description .price{
+  font-family: 'Lemon', serif;
+  margin:10px 20px 10px 0;
+}
+
+.add-to-cart {
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-to-cart:hover {
+  background-color: #ef435d;
+}
+
+/* Styling for the footer area */
+.footarea {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 10px;
+  background-color: DarkSalmon;
+  color: white;
+  padding: 1rem;
+}
+
+/* Styling for the copyright text */
+.footarea .ground .high p {
+  margin: 0;
+  color: mintcream;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Center alignment for social icons */
+.footarea .ground .social-icons {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+/* Social icon individual styling */
+.fa {
+  padding: 10px;
+  font-size: 18px;
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Facebook icon */
+.fa-facebook {
+  background-color: #3B5998;
+}
+
+/* Twitter icon */
+.fa-twitter {
+  background-color: #55ACEE;
+}
+
+/* Twitter icon */
+.fa-instagram {
+  background-color: #c03f15;
+}
+
+/* Hover effect for social icons */
+.fa:hover {
+  opacity: 0.8;
+}
+
+/* Flex container for horizontal alignment */
+.ground {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Row container for proper layout */
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.high {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 590px;
+}
+
+
+/* Media Queries */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .nav-container {
+    flex-direction: column;
+  }
+
+  .detail .shoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .links a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .detail .shoes {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+
+  nav .nav-container img {
+    height: 40px;
+  }
+
+  .price {
+    font-size: 1.2rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .showcase-area {
+    height: 50vmax;
+  }
+}
